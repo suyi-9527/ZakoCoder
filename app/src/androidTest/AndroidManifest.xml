@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="dev.zakocoder.app.permission.KERNEL_PROBE" />
     <application>
         <!-- Test APK only: serves fixed test bytes, never application files. Removed with the test APK. -->
         <provider android:name="dev.zakocoder.app.ImportFixtureProvider"

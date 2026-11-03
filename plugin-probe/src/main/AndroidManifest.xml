@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission
+        android:name="dev.zakocoder.app.permission.KERNEL_PROBE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:hasCode="true"
+        android:label="ZakoCoder kernel probe">
+        <!-- Prototype only: same-signature service boundary for the plugin design spike. -->
+        <service
+            android:name=".ProbeService"
+            android:exported="true"
+            android:permission="dev.zakocoder.app.permission.KERNEL_PROBE" />
+    </application>
+</manifest>

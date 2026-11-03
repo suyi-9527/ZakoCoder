@@ -15,6 +15,9 @@ dependencyResolutionManagement {
 rootProject.name = "ZakoCoder"
 include(":app")
 
+// Prototype-only module for the kernel-plugin feasibility spike (not part of the app).
+include(":plugin-probe")
+
 include(":terminal-emulator", ":terminal-view")
 project(":terminal-emulator").projectDir = file("third_party/terminal-emulator")
 project(":terminal-view").projectDir = file("third_party/terminal-view")
